@@ -1,0 +1,32 @@
+<div class="container-fluid">
+  <button type="button" class="btn btn-secondary">Ships</button>
+  <div class="row">
+    <div class="col-sm-6 col-md-4" style="padding-right:0px" *ngFor="let c of starships">
+      <div class="card" style="margin-bottom: 10px;">
+        <div class="card-body">
+          <div class="container">
+            <h5 class="card-title">{{ c.name }}</h5>
+            <p class="card-text text-secondary">{{ c.model }}</p>
+          </div>
+          <div class="container"><hr class="text-secondary"/></div>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <h4>{{c.crew}}</h4>
+                  <span class="text-secondary">Crew</span>
+                </div>
+                <div class="col-sm">
+                  <h4>{{c.passengers}}</h4>
+                   <span class="text-secondary">Passengers</span>
+                </div>
+                <div class="col-sm">
+                  <h4>{{c.films.length}}</h4>
+                  <span class="text-secondary">Films Count</span>
+                </div>
+             </div>
+           </div>
+        </div>
+       </div>
+     </div>   
+    </div>
+  </div>
